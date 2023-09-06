@@ -38,4 +38,4 @@ jobs:
           context: .
           push: true
           platforms: linux/386,linux/amd64,linux/arm64
-          tags: ${{ env.DOCKERHUB_USERNAME }}/gitflow-demo:${{ steps.vars.outputs.sha_short }}
+          tags: ${{ env.DOCKERHUB_USERNAME }}/githubflow-demo:${{ steps.vars.outputs.sha_short }}
