@@ -8,5 +8,5 @@ RUN CGO_ENABLED=0 go build -o main
 
 FROM alpine
 WORKDIR /app
-COPY --from=builder /app/gitflow-demo-main ./main
+COPY --from=builder /app/main ./main
 CMD ["/app/main"]
